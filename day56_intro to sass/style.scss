@@ -1,0 +1,213 @@
+@import "./login";
+
+
+//variables
+$bgColor : violet;
+$color : red;
+$fs : 3rem;
+$bor : 5px solid black;
+
+// body{
+//     background-color: $bgColor;
+// }
+
+h1{
+    color: $color;
+    font-size: $fs;
+    border: $bor;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+//Nesting
+form{
+    div{
+        label{
+            font-size: 3rem;
+            color: blue;
+        }
+    }
+}
+
+div{
+    label{
+        font-size: 4rem;
+        color: green;
+    }
+}
+
+label{
+    font-size: 2rem;
+    color: black;
+}
+
+
+//Mixins(functions with parameters)
+@mixin btnStyles($bgc,$col,$fs,$br){
+    background-color: $bgc;
+    color: $col;
+    font-size: $fs;
+    border-radius: $br;
+}
+
+#btn1{
+    @include btnStyles(coral,blue,2rem,10px);
+}
+
+#btn2{
+    @include btnStyles(pink,blue,3rem,20px);
+}
+
+#btn3{
+    @include btnStyles(bisque,green,1.2rem,15px);
+}
+
+#btn4{
+    @include btnStyles(orange,deepskyblue,2.5rem,30px);
+}
+
+#btn5{
+    @include btnStyles(red,black,3.5rem,25px);
+}
+
+$light-background: #f2ece4;
+$light-text: #036;
+$dark-background: #6b717f;
+$dark-text: #d2e1dd;
+
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+  } @else {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}
+
+body{
+    @include theme-colors(true)
+}
+
+%message{
+    width: 150px;
+    height:100px;
+    border: none;
+    box-shadow: 0px 0px 15px black;
+    font-size: 2.5rem;
+    text-align: center;
+    display: inline-block;
+    margin: 25px;
+    padding-top: 50px;
+    border-radius: 10px;
+    
+}
+.skyblue{
+    @extend %message;
+    background-color: skyblue;
+    color: white;
+   
+}
+.pink{
+    @extend %message;  
+    background-color: pink;
+    color: yellow;
+}
+.bisque{
+    @extend %message; 
+    background-color: bisque;
+    color: blue;
+}
+.grey{
+    @extend %message; 
+    background-color: grey;
+}
+
+$padding-top: 15px;
+$margin: 25px;
+$width: 90%;
+$fontsize: 1.8rem;
+$border-radius: 20px;
+
+.silver {
+    width: $width * 0.7;
+    border: 2px solid #bbb;
+    border-radius: $border-radius + 10px;
+    margin: $margin - 3px;
+    font-size: $fontsize + 1.5rem;
+    padding-top: $padding-top + 30px;
+    background-color: silver;
+    text-align: center;
+    display: inline-block;
+    height: 160px;
+    box-shadow: 0px 0px 20px gray;
+    color: black;
+}
+
+$theme: "dark"; // Change this to "light" or "colorful" to see different styles
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 200px;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  @if $theme == "dark" {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  } @else if $theme == "light" {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  } @else if $theme == "colorful" {
+    background-color: linear-gradient(to right, #ff7eb3, #ff758c, #ff9a7b);
+    color: #fff;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(255, 122, 211, 0.5);
+  } @else {
+    background-color: gray;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+  }
+}
+
+
+// SCSS Variables
+$colors: #ff7f50, #ffa07a, #20b2aa, #87ceeb, #dda0dd;
+
+.button-container {
+  display: flex;
+  gap: 10px;
+
+  @for $i from 1 through 5 {
+    .btn-#{$i} {
+      background-color: nth($colors, $i); // Pick color from $colors list
+      border: none;
+      color: white;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+
+h2{
+    font-size: 3rem;
+    background-color: orange;
+    width: fit-content;
+    padding: 5px;
+}

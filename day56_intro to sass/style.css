@@ -1,0 +1,220 @@
+.login {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background-color: bisque;
+  border: 3px solid blue;
+  color: black;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.body {
+  background-color: greenyellow;
+}
+
+.accordion {
+  width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  color: red;
+  font-size: 3rem;
+  border: 5px solid black;
+  text-align: center;
+  border-radius: 20px;
+}
+
+form div label {
+  font-size: 3rem;
+  color: blue;
+}
+
+div label {
+  font-size: 4rem;
+  color: green;
+}
+
+label {
+  font-size: 2rem;
+  color: black;
+}
+
+#btn1 {
+  background-color: coral;
+  color: blue;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+#btn2 {
+  background-color: pink;
+  color: blue;
+  font-size: 3rem;
+  border-radius: 20px;
+}
+
+#btn3 {
+  background-color: bisque;
+  color: green;
+  font-size: 1.2rem;
+  border-radius: 15px;
+}
+
+#btn4 {
+  background-color: orange;
+  color: deepskyblue;
+  font-size: 2.5rem;
+  border-radius: 30px;
+}
+
+#btn5 {
+  background-color: red;
+  color: black;
+  font-size: 3.5rem;
+  border-radius: 25px;
+}
+
+body {
+  background-color: #f2ece4;
+  color: #036;
+}
+
+.grey, .bisque, .pink, .skyblue {
+  width: 150px;
+  height: 100px;
+  border: none;
+  box-shadow: 0px 0px 15px black;
+  font-size: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  margin: 25px;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+
+.skyblue {
+  background-color: skyblue;
+  color: white;
+}
+
+.pink {
+  background-color: pink;
+  color: yellow;
+}
+
+.bisque {
+  background-color: bisque;
+  color: blue;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.silver {
+  width: 63%;
+  border: 2px solid #bbb;
+  border-radius: 30px;
+  margin: 22px;
+  font-size: 3.3rem;
+  padding-top: 45px;
+  background-color: silver;
+  text-align: center;
+  display: inline-block;
+  height: 160px;
+  box-shadow: 0px 0px 20px gray;
+  color: black;
+}
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 200px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+.button-container .btn-1 {
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.button-container .btn-1:hover {
+  transform: scale(1.1);
+}
+.button-container .btn-2 {
+  background-color: #ffa07a;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.button-container .btn-2:hover {
+  transform: scale(1.1);
+}
+.button-container .btn-3 {
+  background-color: #20b2aa;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.button-container .btn-3:hover {
+  transform: scale(1.1);
+}
+.button-container .btn-4 {
+  background-color: #87ceeb;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.button-container .btn-4:hover {
+  transform: scale(1.1);
+}
+.button-container .btn-5 {
+  background-color: #dda0dd;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.button-container .btn-5:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 3rem;
+  background-color: orange;
+  width: fit-content;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
